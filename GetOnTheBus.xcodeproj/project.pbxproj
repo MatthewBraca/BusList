@@ -14,6 +14,9 @@
 		2511D1A31CB4416C008F19A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2511D1A11CB4416C008F19A4 /* LaunchScreen.storyboard */; };
 		2511D1AE1CB44171008F19A4 /* GetOnTheBusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2511D1AD1CB44171008F19A4 /* GetOnTheBusTests.swift */; };
 		2511D1B91CB44172008F19A4 /* GetOnTheBusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2511D1B81CB44172008F19A4 /* GetOnTheBusUITests.swift */; };
+		2511D1C71CB44326008F19A4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2511D1C61CB44326008F19A4 /* MapKit.framework */; };
+		254CA8881CB4A30E00952F33 /* BusRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA8871CB4A30E00952F33 /* BusRoute.swift */; };
+		254CA88A1CB5532300952F33 /* BusStopDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CA8891CB5532300952F33 /* BusStopDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2511D1B41CB44172008F19A4 /* GetOnTheBusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetOnTheBusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2511D1B81CB44172008F19A4 /* GetOnTheBusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetOnTheBusUITests.swift; sourceTree = "<group>"; };
 		2511D1BA1CB44172008F19A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2511D1C61CB44326008F19A4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		254CA8871CB4A30E00952F33 /* BusRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusRoute.swift; sourceTree = "<group>"; };
+		254CA8891CB5532300952F33 /* BusStopDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2511D1C71CB44326008F19A4 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		2511D18C1CB44169008F19A4 = {
 			isa = PBXGroup;
 			children = (
+				2511D1C61CB44326008F19A4 /* MapKit.framework */,
 				2511D1971CB4416B008F19A4 /* GetOnTheBus */,
 				2511D1AC1CB44171008F19A4 /* GetOnTheBusTests */,
 				2511D1B71CB44172008F19A4 /* GetOnTheBusUITests */,
@@ -99,6 +107,8 @@
 			children = (
 				2511D1981CB4416B008F19A4 /* AppDelegate.swift */,
 				2511D19A1CB4416B008F19A4 /* ViewController.swift */,
+				254CA8891CB5532300952F33 /* BusStopDetailViewController.swift */,
+				254CA8871CB4A30E00952F33 /* BusRoute.swift */,
 				2511D19C1CB4416C008F19A4 /* Main.storyboard */,
 				2511D19F1CB4416C008F19A4 /* Assets.xcassets */,
 				2511D1A11CB4416C008F19A4 /* LaunchScreen.storyboard */,
@@ -259,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254CA8881CB4A30E00952F33 /* BusRoute.swift in Sources */,
 				2511D19B1CB4416B008F19A4 /* ViewController.swift in Sources */,
+				254CA88A1CB5532300952F33 /* BusStopDetailViewController.swift in Sources */,
 				2511D1991CB4416B008F19A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +499,7 @@
 				2511D1BF1CB44172008F19A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2511D1C01CB44172008F19A4 /* Build configuration list for PBXNativeTarget "GetOnTheBusTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				2511D1C21CB44172008F19A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2511D1C31CB44172008F19A4 /* Build configuration list for PBXNativeTarget "GetOnTheBusUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				2511D1C51CB44172008F19A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
